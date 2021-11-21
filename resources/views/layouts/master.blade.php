@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-        @include('layouts.head')
+        @include(' layouts.head')
         
 
         <body id="page-top">
@@ -9,8 +9,10 @@
                  <div id="content-wrapper" class="d-flex flex-column"> 
                      <div id="content">
                         @include('layouts.navbar')
-                        @include('layouts.page')
-                        @yield('students')
+                       
+                        @yield('page')
+                       
+
                     </div>
                     
                     
