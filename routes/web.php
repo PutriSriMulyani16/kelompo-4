@@ -17,3 +17,10 @@ Route::get('/', function () {
     return view('layouts.master');
 });
 
+Route::get('/datasiswa', function () {
+    return view('students.datasiswa');
+});
+
+
+
+

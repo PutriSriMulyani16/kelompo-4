@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Classes extends Migration
+class Spp extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class Classes extends Migration
      */
     public function up()
     {
-        schema::create('classes', function (Blueprint $table) {
+        schema::create('spp', function (Blueprint $table) {
             $table->id();
-            $table->varchar('nama_kelas');
-          
-        };
+            $table->string('tahunangkatan');
+            $table->string('biaya');
+            $table->timestamps();
+            $table->softDeletes();
+        });
     }
 
     /**
@@ -27,6 +29,6 @@ class Classes extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('classes');
+        Schema::dropIfExists('spp');
     }
 }

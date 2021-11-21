@@ -9,8 +9,10 @@
                  <div id="content-wrapper" class="d-flex flex-column"> 
                      <div id="content">
                         @include('layouts.navbar')
-                        @yield('content')
+                        @include('layouts.page')
+                        @yield('students')
                     </div>
+                    
                     
                     @include('layouts.footer')
                  </div>

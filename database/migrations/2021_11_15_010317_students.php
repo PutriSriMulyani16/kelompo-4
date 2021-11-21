@@ -16,16 +16,18 @@ class Students extends Migration
         schema::create('students', function (Blueprint $table) {
             $table->id();
             $table->integer('nisn');
-            $table->varchar('nama');
-            $table->unsigneBigInterger('id_class');
-            $table->varchar('notelpon');
+            $table->string('nama');
+            $table->unsignedBigInteger('id_class');
+            $table->string('notelpon');
             $table->text('alamat');
-            $table->unsigneBigInterger('id_majors');
-            $table->unsigneBigInterger('id_spp');
+            $table->unsignedBigInteger('id_majors');
+            $table->unsignedBigInteger('id_spp');
 
-            $table->foreign('id_class')->references('id_class')->on('classes');
-            $table->foreign('id_major')->references('id_major')->on('majors');
-            $table->foreign('id_payment')->references('id_payment')->on('payments');
+            $table->foreign('id_class')->references('id')->on('classes');
+            $table->foreign('id_majors')->references('id')->on('majors');
+            $table->foreign('id_spp')->references('id')->on('spp');
+            $table->timestamps();
+            $table->softDeletes();
         }); 
 
     }
