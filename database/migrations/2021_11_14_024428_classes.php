@@ -15,9 +15,11 @@ class Classes extends Migration
     {
         schema::create('classes', function (Blueprint $table) {
             $table->id();
-            $table->varchar('nama_kelas');
+            $table->string('nama_kelas');
+            $table->timestamps();
+            $table->softDeletes();
 
-        }
+        });
     }
 
     /**

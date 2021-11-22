@@ -21,3 +21,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/datasiswa', function () {
+    return view('students.datasiswa');
+});
+
+
+
+
