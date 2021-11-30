@@ -12,7 +12,6 @@
                        
                         @yield('page')
                        
-
                     </div>
                     
                     

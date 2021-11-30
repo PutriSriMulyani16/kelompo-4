@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts.master');
+    return view('layouts.page');
 });
 
 
@@ -23,6 +23,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/datasiswa', function () {
     return view('students.datasiswa');
+});
+Route::get('/datapetugas', function () {
+    return view('petugas.datapetugas');
 });
 
 

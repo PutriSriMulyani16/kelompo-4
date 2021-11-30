@@ -43,21 +43,7 @@
 </li>
 
 <!-- Nav Item - Utilities Collapse Menu -->
-<li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-        aria-expanded="true" aria-controls="collapseUtilities">
-        <i class="fas fa-fw fa-wrench"></i>
-        <span>Data Siswa</span>
-    </a>
-    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-        data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
 
-            <a class="collapse-item" href="datasiswa">Lihat Data Siswa</a>
-
-        </div>
-    </div>
-</li>
 
 <!-- Divider -->
 <hr class="sidebar-divider">
@@ -77,9 +63,9 @@
     <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
 
-            <a class="collapse-item" href="editdatasiswa">Data Siswa</a>
-            <a class="collapse-item" href="editdatapetugas">Data Petugas</a>
-            <a class="collapse-item" href="editdatakelas">Data Kelas</a>
+            <a class="collapse-item" href="datasiswa">Data Siswa</a>
+            <a class="collapse-item" href="datasiswa">Data Petugas</a>
+            <a class="collapse-item" href="datakelas">Data Kelas</a>
 
         </div>
     </div>
